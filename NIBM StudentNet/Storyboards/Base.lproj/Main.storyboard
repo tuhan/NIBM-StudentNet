@@ -29,9 +29,29 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="kQj-Iy-E4V" kind="presentation" id="Tdy-gB-pOC"/>
+                        <segue destination="Khg-el-vfv" kind="presentation" id="s3v-qh-voL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Authentication-->
+        <scene sceneID="WcD-dj-maD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Authentication" id="kQj-Iy-E4V" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8w-4R-vtl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="-136"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="dzb-YN-HaY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="Khg-el-vfv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vPv-Js-aoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="158"/>
         </scene>
     </scenes>
 </document>
