@@ -12,6 +12,8 @@
 		E71B523A22DF20FE00E68130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71B523822DF20FE00E68130 /* Main.storyboard */; };
 		E71B523C22DF210000E68130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71B523B22DF210000E68130 /* Assets.xcassets */; };
 		E71B523F22DF210000E68130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71B523D22DF210000E68130 /* LaunchScreen.storyboard */; };
+		E7C1E46122E0688500021A01 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C1E46022E0688500021A01 /* Authentication.storyboard */; };
+		E7C1E46422E068BC00021A01 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C1E46322E068BC00021A01 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E71B523B22DF210000E68130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71B523E22DF210000E68130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E71B524022DF210000E68130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7C1E46022E0688500021A01 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		E7C1E46322E068BC00021A01 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		E71B523322DF20FE00E68130 /* NIBM StudentNet */ = {
 			isa = PBXGroup;
 			children = (
+				E7C1E46222E068A200021A01 /* Storyboards */,
 				E71B523422DF20FE00E68130 /* AppDelegate.swift */,
 				E71B523622DF20FE00E68130 /* ViewController.swift */,
-				E71B523822DF20FE00E68130 /* Main.storyboard */,
 				E71B523B22DF210000E68130 /* Assets.xcassets */,
-				E71B523D22DF210000E68130 /* LaunchScreen.storyboard */,
 				E71B524022DF210000E68130 /* Info.plist */,
 			);
 			path = "NIBM StudentNet";
+			sourceTree = "<group>";
+		};
+		E7C1E46222E068A200021A01 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E71B523822DF20FE00E68130 /* Main.storyboard */,
+				E7C1E46022E0688500021A01 /* Authentication.storyboard */,
+				E71B523D22DF210000E68130 /* LaunchScreen.storyboard */,
+				E7C1E46322E068BC00021A01 /* Home.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C1E46122E0688500021A01 /* Authentication.storyboard in Resources */,
+				E7C1E46422E068BC00021A01 /* Home.storyboard in Resources */,
 				E71B523F22DF210000E68130 /* LaunchScreen.storyboard in Resources */,
 				E71B523C22DF210000E68130 /* Assets.xcassets in Resources */,
 				E71B523A22DF20FE00E68130 /* Main.storyboard in Resources */,
@@ -292,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tuhan.NIBM-StudentNet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tuhan.NIBM-StudentNet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
