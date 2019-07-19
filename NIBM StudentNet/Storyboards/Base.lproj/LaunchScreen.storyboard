@@ -34,11 +34,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2019 NIBM StudentNet. All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcc-KQ-PVf">
-                                        <rect key="frame" x="8" y="624" width="359" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="359" id="IFx-FR-ean"/>
-                                            <constraint firstAttribute="height" constant="21" id="g9M-Vt-ynN"/>
-                                        </constraints>
+                                        <rect key="frame" x="8" y="624" width="359" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -46,15 +42,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="tcc-KQ-PVf" firstAttribute="leading" secondItem="aJz-eH-Cev" secondAttribute="leading" constant="8" id="0TM-3H-Niw"/>
                                     <constraint firstAttribute="trailing" secondItem="xOh-Jg-rkg" secondAttribute="trailing" constant="86" id="2Ni-qM-I2E"/>
                                     <constraint firstItem="xOh-Jg-rkg" firstAttribute="top" secondItem="aJz-eH-Cev" secondAttribute="top" constant="60" id="70e-5T-ZQT"/>
                                     <constraint firstAttribute="trailing" secondItem="szw-kv-peq" secondAttribute="trailing" constant="8" id="Bis-mh-Z6S"/>
                                     <constraint firstItem="szw-kv-peq" firstAttribute="top" secondItem="aJz-eH-Cev" secondAttribute="top" constant="218" id="EWU-vz-UYo"/>
                                     <constraint firstItem="xOh-Jg-rkg" firstAttribute="leading" secondItem="aJz-eH-Cev" secondAttribute="leading" constant="86" id="KGc-2X-YMB"/>
                                     <constraint firstAttribute="height" constant="667" id="Yw9-gC-vQh"/>
-                                    <constraint firstAttribute="trailing" secondItem="tcc-KQ-PVf" secondAttribute="trailing" constant="8" id="cEc-yH-CSG"/>
-                                    <constraint firstItem="tcc-KQ-PVf" firstAttribute="top" secondItem="aJz-eH-Cev" secondAttribute="top" constant="624" id="rsy-Sd-YiJ"/>
+                                    <constraint firstItem="tcc-KQ-PVf" firstAttribute="top" secondItem="aJz-eH-Cev" secondAttribute="top" constant="624" id="bCK-G5-O5N"/>
+                                    <constraint firstItem="tcc-KQ-PVf" firstAttribute="leading" secondItem="aJz-eH-Cev" secondAttribute="leading" constant="8" id="sAf-au-BFd"/>
+                                    <constraint firstAttribute="trailing" secondItem="tcc-KQ-PVf" secondAttribute="trailing" constant="8" id="upI-gJ-SPp"/>
                                     <constraint firstItem="szw-kv-peq" firstAttribute="leading" secondItem="aJz-eH-Cev" secondAttribute="leading" constant="8" id="xQm-RV-AQ3"/>
                                 </constraints>
                             </view>
