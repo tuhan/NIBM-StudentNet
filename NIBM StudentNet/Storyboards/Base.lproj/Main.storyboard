@@ -30,8 +30,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="kQj-Iy-E4V" kind="presentation" id="Tdy-gB-pOC"/>
-                        <segue destination="Khg-el-vfv" kind="presentation" id="s3v-qh-voL"/>
+                        <segue destination="kQj-Iy-E4V" kind="presentation" identifier="Authentication" id="Tdy-gB-pOC"/>
+                        <segue destination="Khg-el-vfv" kind="presentation" identifier="Home" id="s3v-qh-voL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
