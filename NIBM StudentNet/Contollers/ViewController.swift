@@ -32,8 +32,10 @@ class ViewController: UIViewController {
               }
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        <#code#>
+    override func viewDidDisappear(_ animated: Bool) {
+        Auth.auth().removeStateDidChangeListener(AppTempData.userHandler!)
     }
+    
+    var ref: DatabaseReference!
 }
 
