@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>235395302795-qgrckv2tu4v52pe812cokag1f3lq8nbg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.235395302795-qgrckv2tu4v52pe812cokag1f3lq8nbg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBR_Ehz2GE7bncKo1lyVuWzZJ8IFB9HcM8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>235395302795</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.tuhan.NIBM-StudentNet</string>
+	<key>PROJECT_ID</key>
+	<string>nibm-studentnet</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nibm-studentnet.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:235395302795:ios:a434478352949f05</string>
+	<key>DATABASE_URL</key>
+	<string>https://nibm-studentnet.firebaseio.com</string>
+</dict>
+</plist>
