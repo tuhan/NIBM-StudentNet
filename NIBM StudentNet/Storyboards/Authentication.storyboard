@@ -55,7 +55,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cee-AT-PwX">
                                         <rect key="frame" x="115" y="381" width="145" height="30"/>
@@ -67,6 +67,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="doBtnLogin:" destination="Mbj-H7-OMx" eventType="touchUpInside" id="mXd-RL-fqS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="794-7E-4m7">
                                         <rect key="frame" x="116" y="419" width="143" height="30"/>
@@ -75,6 +78,9 @@
                                             <constraint firstAttribute="height" constant="30" id="7cy-Sf-1TD"/>
                                         </constraints>
                                         <state key="normal" title="Forgot Password ?"/>
+                                        <connections>
+                                            <action selector="doBtnForgotPassword:" destination="Mbj-H7-OMx" eventType="touchUpInside" id="eMP-i7-wK7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -111,6 +117,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5c2-Oq-7wC"/>
                     </view>
+                    <connections>
+                        <outlet property="doBtnForgotPassword" destination="794-7E-4m7" id="Xkh-bx-Zsy"/>
+                        <outlet property="doBtnLogin" destination="Cee-AT-PwX" id="cND-3J-uub"/>
+                        <outlet property="tfPassword" destination="ZaX-FT-hSK" id="qTf-hf-QP5"/>
+                        <outlet property="tfUsername" destination="JPt-gH-5SU" id="pD6-si-nRm"/>
+                        <outlet property="topLogo" destination="6d4-WZ-xnq" id="8aU-bm-TpD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJb-DA-lH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
