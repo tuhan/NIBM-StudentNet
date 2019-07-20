@@ -28,6 +28,8 @@ class ForgotPasswordViewController: UIViewController {
         let email = self.tfForgotPassword.text!
         if email != "" {
             Auth.auth().sendPasswordReset(withEmail: email) { error in
+            
+                // alert Required !
                 if error != nil {
                     print(error?.localizedDescription as Any)
                     return
