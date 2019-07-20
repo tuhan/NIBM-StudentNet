@@ -11,6 +11,7 @@
 		3808E7DC22E1C10000918E22 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3808E7DB22E1C10000918E22 /* AuthenticationViewController.swift */; };
 		3850D20322E217F700297907 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3850D20222E217F700297907 /* GoogleService-Info.plist */; };
 		38BB150F22E2D9DB003548C6 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BB150E22E2D9DB003548C6 /* MyProfileViewController.swift */; };
+		38BB151122E2E5EA003548C6 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BB151022E2E5EA003548C6 /* ForgotPasswordViewController.swift */; };
 		E71B523522DF20FE00E68130 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71B523422DF20FE00E68130 /* AppDelegate.swift */; };
 		E71B523722DF20FE00E68130 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71B523622DF20FE00E68130 /* ViewController.swift */; };
 		E71B523A22DF20FE00E68130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71B523822DF20FE00E68130 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		3808E7DB22E1C10000918E22 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		3850D20222E217F700297907 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38BB150E22E2D9DB003548C6 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		38BB151022E2E5EA003548C6 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		3F5D7184E8198819CAFA9365 /* Pods_NIBM_StudentNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIBM_StudentNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55B7624B7BA101FFE5D9D6A /* Pods-NIBM StudentNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIBM StudentNet.release.xcconfig"; path = "Target Support Files/Pods-NIBM StudentNet/Pods-NIBM StudentNet.release.xcconfig"; sourceTree = "<group>"; };
 		E71B523122DF20FE00E68130 /* NIBM StudentNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NIBM StudentNet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 				E71B523622DF20FE00E68130 /* ViewController.swift */,
 				3808E7DB22E1C10000918E22 /* AuthenticationViewController.swift */,
 				38BB150E22E2D9DB003548C6 /* MyProfileViewController.swift */,
+				38BB151022E2E5EA003548C6 /* ForgotPasswordViewController.swift */,
 			);
 			path = Contollers;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				38BB150F22E2D9DB003548C6 /* MyProfileViewController.swift in Sources */,
 				3808E7DC22E1C10000918E22 /* AuthenticationViewController.swift in Sources */,
+				38BB151122E2E5EA003548C6 /* ForgotPasswordViewController.swift in Sources */,
 				E71B523722DF20FE00E68130 /* ViewController.swift in Sources */,
 				3808E7DA22E1B17300918E22 /* AppTempData.swift in Sources */,
 				E71B523522DF20FE00E68130 /* AppDelegate.swift in Sources */,

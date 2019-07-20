@@ -18,7 +18,7 @@ class MyProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    // action - doBtnSignOut
     @IBAction func doBtnSignOut(_ sender: UIBarButtonItem) {
         let firebaseAuth = Auth.auth()
         do {

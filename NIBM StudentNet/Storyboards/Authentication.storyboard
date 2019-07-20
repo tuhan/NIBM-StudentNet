@@ -80,6 +80,7 @@
                                         <state key="normal" title="Forgot Password ?"/>
                                         <connections>
                                             <action selector="doBtnForgotPassword:" destination="Mbj-H7-OMx" eventType="touchUpInside" id="eMP-i7-wK7"/>
+                                            <segue destination="4UX-1f-Kzz" kind="show" id="TYC-AD-ia1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -128,6 +129,105 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJb-DA-lH5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="285.60000000000002" y="-269.41529235382313"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="KbH-y7-YGF">
+            <objects>
+                <viewController id="4UX-1f-Kzz" customClass="ForgotPasswordViewController" customModule="NIBM_StudentNet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SwL-PQ-fNp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVo-Ec-pGz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email for password reset" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJL-15-UkN">
+                                        <rect key="frame" x="8" y="76" width="359" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="HgW-hr-lmY"/>
+                                            <constraint firstAttribute="width" constant="359" id="c9T-fo-5ov"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PS5-5C-w4o">
+                                        <rect key="frame" x="8" y="142" width="359" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="359" id="JgS-ka-YAh"/>
+                                            <constraint firstAttribute="height" constant="30" id="ZdA-tN-jeh"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSr-vu-TZs">
+                                        <rect key="frame" x="72" y="216" width="230" height="34"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="2Kg-qS-KJY"/>
+                                            <constraint firstAttribute="width" constant="230" id="yP9-p8-lBH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Send me verification email">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="doBtnResetPassword:" destination="4UX-1f-Kzz" eventType="touchUpInside" id="B9p-sg-7xc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NY-q0-gOg">
+                                        <rect key="frame" x="72" y="275" width="230" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="7bt-hi-Qst"/>
+                                            <constraint firstAttribute="height" constant="34" id="xBK-Hr-Cea"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="1" green="0.20061041730000001" blue="0.042608356579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="doBtnCancel:" destination="4UX-1f-Kzz" eventType="touchUpInside" id="MBV-d1-TVy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6NY-q0-gOg" firstAttribute="leading" secondItem="lVo-Ec-pGz" secondAttribute="leading" constant="72" id="56S-La-Lmk"/>
+                                    <constraint firstAttribute="height" constant="667" id="BhB-Vv-ZZf"/>
+                                    <constraint firstItem="PS5-5C-w4o" firstAttribute="leading" secondItem="lVo-Ec-pGz" secondAttribute="leading" constant="8" id="DNi-Z0-dbS"/>
+                                    <constraint firstItem="PS5-5C-w4o" firstAttribute="top" secondItem="lVo-Ec-pGz" secondAttribute="top" constant="142" id="GKN-Jm-MVj"/>
+                                    <constraint firstItem="pSr-vu-TZs" firstAttribute="leading" secondItem="lVo-Ec-pGz" secondAttribute="leading" constant="72" id="GwB-AF-CGI"/>
+                                    <constraint firstAttribute="trailing" secondItem="DJL-15-UkN" secondAttribute="trailing" constant="8" id="NhO-Vk-qoV"/>
+                                    <constraint firstAttribute="width" constant="375" id="Ovl-XZ-pDW"/>
+                                    <constraint firstItem="DJL-15-UkN" firstAttribute="top" secondItem="lVo-Ec-pGz" secondAttribute="top" constant="76" id="SFC-I6-Ehg"/>
+                                    <constraint firstItem="6NY-q0-gOg" firstAttribute="top" secondItem="lVo-Ec-pGz" secondAttribute="top" constant="275" id="Uyl-IV-zs4"/>
+                                    <constraint firstAttribute="trailing" secondItem="6NY-q0-gOg" secondAttribute="trailing" constant="73" id="i8K-hB-5E6"/>
+                                    <constraint firstItem="pSr-vu-TZs" firstAttribute="top" secondItem="lVo-Ec-pGz" secondAttribute="top" constant="216" id="mTn-oI-i97"/>
+                                    <constraint firstAttribute="trailing" secondItem="pSr-vu-TZs" secondAttribute="trailing" constant="73" id="nRn-O4-qjx"/>
+                                    <constraint firstItem="DJL-15-UkN" firstAttribute="leading" secondItem="lVo-Ec-pGz" secondAttribute="leading" constant="8" id="pp5-yI-6Y1"/>
+                                    <constraint firstAttribute="trailing" secondItem="PS5-5C-w4o" secondAttribute="trailing" constant="8" id="uDj-ef-PY4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lVo-Ec-pGz" firstAttribute="top" secondItem="SwL-PQ-fNp" secondAttribute="top" id="414-N3-AJE"/>
+                            <constraint firstItem="lVo-Ec-pGz" firstAttribute="leading" secondItem="SwL-PQ-fNp" secondAttribute="leading" id="Esv-FF-iLK"/>
+                            <constraint firstAttribute="bottom" secondItem="lVo-Ec-pGz" secondAttribute="bottom" id="d97-6t-4xx"/>
+                            <constraint firstAttribute="trailing" secondItem="lVo-Ec-pGz" secondAttribute="trailing" id="qVT-Lf-JLt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KZE-g9-31a"/>
+                    </view>
+                    <connections>
+                        <outlet property="doBtnCancel" destination="6NY-q0-gOg" id="vwq-al-167"/>
+                        <outlet property="doBtnResetPassword" destination="pSr-vu-TZs" id="wPa-gu-L8l"/>
+                        <outlet property="tfForgotPassword" destination="PS5-5C-w4o" id="O4I-89-0aS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CFZ-w5-kZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1455" y="-269"/>
         </scene>
     </scenes>
     <resources>
