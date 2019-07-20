@@ -33,7 +33,7 @@ class ForgotPasswordViewController: UIViewController {
                 if error != nil {
                     print(error?.localizedDescription as Any)
                     return
-                } else {
+                }else {
                     self.dismiss(animated: true, completion: nil)
                 }
             }
