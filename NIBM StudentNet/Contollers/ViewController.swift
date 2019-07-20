@@ -36,6 +36,6 @@ class ViewController: UIViewController {
         Auth.auth().removeStateDidChangeListener(AppTempData.userHandler!)
     }
     
-    //var ref: DatabaseReference!
+    var ref: DatabaseReference!
 }
 
