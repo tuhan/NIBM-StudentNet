@@ -74,13 +74,6 @@
 			path = Contollers;
 			sourceTree = "<group>";
 		};
-		38B3EC9722E17F4D00C0D6B7 /* Modals */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Modals;
-			sourceTree = "<group>";
-		};
 		38B3EC9822E17F7D00C0D6B7 /* App Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +93,7 @@
 		E71B522822DF20FE00E68130 = {
 			isa = PBXGroup;
 			children = (
+				E741560522E8951500D2023D /* Models */,
 				E71B523322DF20FE00E68130 /* NIBM StudentNet */,
 				E71B523222DF20FE00E68130 /* Products */,
 				0A4038DA7C63CCBC8AB2EDB1 /* Pods */,
@@ -120,7 +114,6 @@
 			children = (
 				E7ADCB1222E388650002D270 /* GoogleService-Info.plist */,
 				E71B523422DF20FE00E68130 /* AppDelegate.swift */,
-				38B3EC9722E17F4D00C0D6B7 /* Modals */,
 				E7C1E46222E068A200021A01 /* Storyboards */,
 				38B3EC9822E17F7D00C0D6B7 /* App Support */,
 				38B3EC9622E17F3400C0D6B7 /* Contollers */,
@@ -128,6 +121,13 @@
 				E71B524022DF210000E68130 /* Info.plist */,
 			);
 			path = "NIBM StudentNet";
+			sourceTree = "<group>";
+		};
+		E741560522E8951500D2023D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E7C1E46222E068A200021A01 /* Storyboards */ = {

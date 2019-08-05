@@ -21,7 +21,7 @@ class AuthenticationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.doBtnLogin.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
     }
     
