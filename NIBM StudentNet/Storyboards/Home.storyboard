@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tVz-De-ce5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tVz-De-ce5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -85,35 +85,72 @@
         <!--Forum-->
         <scene sceneID="iGa-E6-g30">
             <objects>
-                <viewController id="JOA-fI-yAk" sceneMemberID="viewController">
+                <viewController id="JOA-fI-yAk" customClass="ForumQuestionCategoriesViewController" customModule="NIBM_StudentNet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8cv-Wq-xSO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forum Tab Pane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FG-uZ-kpq">
-                                <rect key="frame" x="125" y="323" width="124" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="hk5-cr-XmH"/>
-                                    <constraint firstAttribute="width" constant="124" id="p1T-xp-EdZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yht-AR-q89">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForumQuestionCategoriesTableViewCell" id="sXa-Ko-cA5" customClass="ForumQuestionCategoriesTableViewCell" customModule="NIBM_StudentNet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sXa-Ko-cA5" id="ezw-DH-YbG">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Science (5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itz-eD-qAv">
+                                                    <rect key="frame" x="15" y="11.5" width="345" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="itz-eD-qAv" firstAttribute="leading" secondItem="ezw-DH-YbG" secondAttribute="leadingMargin" id="Gw3-oo-NUe"/>
+                                                <constraint firstItem="itz-eD-qAv" firstAttribute="centerX" secondItem="ezw-DH-YbG" secondAttribute="centerX" id="UaR-Df-b5m"/>
+                                                <constraint firstItem="itz-eD-qAv" firstAttribute="centerY" secondItem="ezw-DH-YbG" secondAttribute="centerY" id="t7X-bO-bgp"/>
+                                                <constraint firstItem="itz-eD-qAv" firstAttribute="centerX" secondItem="ezw-DH-YbG" secondAttribute="centerX" id="zBj-OR-Gv5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryTitle" destination="itz-eD-qAv" id="LKy-Go-yWe"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JOA-fI-yAk" id="vt4-uO-gop"/>
+                                    <outlet property="delegate" destination="JOA-fI-yAk" id="t9V-Qo-2o1"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2FG-uZ-kpq" firstAttribute="leading" secondItem="8cv-Wq-xSO" secondAttribute="leadingMargin" constant="109" id="KKH-Tp-4wQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2FG-uZ-kpq" secondAttribute="trailing" constant="110" id="NTg-8r-8RW"/>
-                            <constraint firstItem="2FG-uZ-kpq" firstAttribute="top" secondItem="8cv-Wq-xSO" secondAttribute="topMargin" constant="259" id="X7T-Go-aiz"/>
+                            <constraint firstAttribute="bottom" secondItem="Yht-AR-q89" secondAttribute="bottom" id="Q6O-Qa-YjK"/>
+                            <constraint firstItem="Yht-AR-q89" firstAttribute="top" secondItem="QcN-db-Hs2" secondAttribute="top" id="mBr-6g-b4Y"/>
+                            <constraint firstItem="Yht-AR-q89" firstAttribute="leading" secondItem="QcN-db-Hs2" secondAttribute="leading" id="w5C-xg-GgN"/>
+                            <constraint firstItem="Yht-AR-q89" firstAttribute="trailing" secondItem="QcN-db-Hs2" secondAttribute="trailing" id="xFr-Yc-9OK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QcN-db-Hs2"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Forum" id="wnq-1D-Bvs"/>
+                    <navigationItem key="navigationItem" title="Forum" id="wnq-1D-Bvs">
+                        <barButtonItem key="leftBarButtonItem" title="MyQuestions" style="plain" id="D5u-KO-xX5">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sWt-kM-RRN">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Yht-AR-q89" id="5dw-2N-Kut"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEI-tb-opf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-727" y="1086"/>
+            <point key="canvasLocation" x="-727.20000000000005" y="1085.3073463268368"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7rI-hR-S4E">
@@ -121,12 +158,13 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tVz-De-ce5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Itl-gA-qJH">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="hU2-YD-seW" kind="relationship" relationship="viewControllers" id="jvi-kZ-gAe"/>
                         <segue destination="PeS-ww-Lpn" kind="relationship" relationship="viewControllers" id="Gfs-kv-MhI"/>
+                        <segue destination="hU2-YD-seW" kind="relationship" relationship="viewControllers" id="jvi-kZ-gAe"/>
                         <segue destination="yve-1m-gIA" kind="relationship" relationship="viewControllers" id="dfU-I2-JXi"/>
                     </connections>
                 </tabBarController>
