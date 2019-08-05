@@ -16,6 +16,8 @@
 		E71B523A22DF20FE00E68130 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71B523822DF20FE00E68130 /* Main.storyboard */; };
 		E71B523C22DF210000E68130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71B523B22DF210000E68130 /* Assets.xcassets */; };
 		E71B523F22DF210000E68130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E71B523D22DF210000E68130 /* LaunchScreen.storyboard */; };
+		E754E40F22F86EBA007445D4 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E40E22F86EBA007445D4 /* Student.swift */; };
+		E754E41122F873B5007445D4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E41022F873B5007445D4 /* RegisterViewController.swift */; };
 		E7ADCB1322E388650002D270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7ADCB1222E388650002D270 /* GoogleService-Info.plist */; };
 		E7C1E46122E0688500021A01 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C1E46022E0688500021A01 /* Authentication.storyboard */; };
 		E7C1E46422E068BC00021A01 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C1E46322E068BC00021A01 /* Home.storyboard */; };
@@ -37,6 +39,8 @@
 		E71B523B22DF210000E68130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71B523E22DF210000E68130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E71B524022DF210000E68130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E754E40E22F86EBA007445D4 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		E754E41022F873B5007445D4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E7ADCB1222E388650002D270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Documents/Acadamic/Coventry University/Y4S2/Agile Development/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7C1E46022E0688500021A01 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		E7C1E46322E068BC00021A01 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 				3808E7DB22E1C10000918E22 /* AuthenticationViewController.swift */,
 				38BB150E22E2D9DB003548C6 /* MyProfileViewController.swift */,
 				38BB151022E2E5EA003548C6 /* ForgotPasswordViewController.swift */,
+				E754E41022F873B5007445D4 /* RegisterViewController.swift */,
 			);
 			path = Contollers;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 		E741560522E8951500D2023D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E754E40E22F86EBA007445D4 /* Student.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 				38BB150F22E2D9DB003548C6 /* MyProfileViewController.swift in Sources */,
 				3808E7DC22E1C10000918E22 /* AuthenticationViewController.swift in Sources */,
 				38BB151122E2E5EA003548C6 /* ForgotPasswordViewController.swift in Sources */,
+				E754E41122F873B5007445D4 /* RegisterViewController.swift in Sources */,
 				E71B523722DF20FE00E68130 /* ViewController.swift in Sources */,
 				3808E7DA22E1B17300918E22 /* AppTempData.swift in Sources */,
+				E754E40F22F86EBA007445D4 /* Student.swift in Sources */,
 				E71B523522DF20FE00E68130 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

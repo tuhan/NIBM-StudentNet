@@ -17,11 +17,14 @@ class AuthenticationViewController: UIViewController {
     @IBOutlet weak var tfUsername: UITextField!
     @IBOutlet weak var tfPassword: UITextField!
     @IBOutlet weak var doBtnLogin: UIButton!
+    @IBOutlet weak var doButtonRegister: UIButton!
     @IBOutlet weak var doBtnForgotPassword: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.doBtnLogin.layer.cornerRadius = 10
+        self.doButtonRegister.layer.cornerRadius = 10
+
         // Do any additional setup after loading the view.
     }
     
