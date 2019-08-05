@@ -26,7 +26,7 @@ class ForumQuestionCategoriesViewController: UIViewController, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ForumQuestionCategoriesTableViewCell", for: indexPath) as! ForumQuestionCategoriesTableViewCell
         
-        if let questionCategory = questionCategoryList[indexPath.row].questionCategory {
+        if let questionCategory = questionCategoryList[indexPath.row].questionCategoryName {
             if let questionCount = questionCategoryList[indexPath.row].questionCount {
                 cell.categoryTitle.text = "\(questionCategory) (\(questionCount))"
             }
@@ -54,7 +54,7 @@ class ForumQuestionCategoriesViewController: UIViewController, UITableViewDelega
                 for questioncategory in snapshot.children.allObjects as! [DataSnapshot] {
 
                     let incomingQuestionCategory = questioncategory.value as! [String: AnyObject]
-                    let questioncategory = QuestionCategory(questionCategory: incomingQuestionCategory["category"] as! String, questionCount: incomingQuestionCategory["count"] as! Int8)
+                    let questioncategory = QuestionCategory(questionCategoryID: incomingQuestionCategory["category_id"] as! String, questionCategoryName: incomingQuestionCategory["category"] as! String, questionCount: incomingQuestionCategory["count"] as! Int8)
                         tempQestionCategory.append(questioncategory)
                 }
             }
@@ -66,17 +66,29 @@ class ForumQuestionCategoriesViewController: UIViewController, UITableViewDelega
             print(error.localizedDescription)
         }
     }
-    
-    
-    
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ForumQuestionCategoriesViewController {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "CategorySelectedSegue", sender: indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-    */
+    
+    // Fires when the cell is clicked, preparing for the segue to set destination view required variables
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Validating and seeing if the incoming segue is the needed one
+        if segue.identifier == "CategorySelectedSegue" {
+            
+            let indexPassed: Int = sender as! Int
+            let destinationVC = segue.destination as! CategorySelectedViewController // INITIALIZING LANDING VIEW CONTROLLER
+            destinationVC.selectedCategoryID = questionCategoryList[indexPassed].questionCategoryID
+            destinationVC.selectedCategoryName = questionCategoryList[indexPassed].questionCategoryName
 
+            
+        }
+        
+    }
+    
 }

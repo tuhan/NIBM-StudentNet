@@ -9,11 +9,13 @@
 import Foundation
 
 class QuestionCategory {
-    var questionCategory: String!
+    var questionCategoryID: String!
+    var questionCategoryName: String!
     var questionCount: Int8!
 
-    init (questionCategory: String, questionCount: Int8) {
-        self.questionCategory = questionCategory
+    init (questionCategoryID: String, questionCategoryName: String, questionCount: Int8) {
+        self.questionCategoryID = questionCategoryID
+        self.questionCategoryName = questionCategoryName
         self.questionCount = questionCount
     }
 }

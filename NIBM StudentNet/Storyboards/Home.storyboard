@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tVz-De-ce5">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="ZKq-q2-FmE" customClass="MyProfileViewController" customModule="NIBM_StudentNet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TwX-Ie-IB0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile Tab Pane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeR-xV-nCb">
-                                <rect key="frame" x="112" y="323" width="151" height="21"/>
+                                <rect key="frame" x="112" y="347" width="151" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="151" id="0Fd-cj-KQu"/>
                                     <constraint firstAttribute="height" constant="21" id="FoO-LZ-VWc"/>
@@ -54,11 +54,11 @@
             <objects>
                 <viewController id="2X6-P9-N9j" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l1t-hx-6P0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings Tab Pane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgc-0y-R7f">
-                                <rect key="frame" x="118" y="323" width="138" height="21"/>
+                                <rect key="frame" x="118" y="347" width="138" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="138" id="1cT-Xe-cz3"/>
                                     <constraint firstAttribute="height" constant="21" id="xja-d5-j0E"/>
@@ -87,22 +87,22 @@
             <objects>
                 <viewController id="JOA-fI-yAk" customClass="ForumQuestionCategoriesViewController" customModule="NIBM_StudentNet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8cv-Wq-xSO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yht-AR-q89">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForumQuestionCategoriesTableViewCell" id="sXa-Ko-cA5" customClass="ForumQuestionCategoriesTableViewCell" customModule="NIBM_StudentNet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sXa-Ko-cA5" id="ezw-DH-YbG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer Science (5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itz-eD-qAv">
-                                                    <rect key="frame" x="15" y="11.5" width="345" height="21"/>
+                                                    <rect key="frame" x="15" y="11.333333333333336" width="384" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -146,11 +146,102 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Yht-AR-q89" id="5dw-2N-Kut"/>
+                        <segue destination="JS1-LG-5pK" kind="show" identifier="CategorySelectedSegue" id="cnP-oH-aod"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEI-tb-opf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-727.20000000000005" y="1085.3073463268368"/>
+        </scene>
+        <!--Category Selected View Controller-->
+        <scene sceneID="9no-dk-5qc">
+            <objects>
+                <viewController id="JS1-LG-5pK" customClass="CategorySelectedViewController" customModule="NIBM_StudentNet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zvm-K7-Sx2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hn0-po-TG3">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionTableViewCell" rowHeight="82" id="43B-SA-C8F" customClass="QuestionTableViewCell" customModule="NIBM_StudentNet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="43B-SA-C8F" id="o1n-d8-FK2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="81.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fik-UY-z9Z">
+                                                    <rect key="frame" x="15" y="6" width="300" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29" id="OGW-9X-baE"/>
+                                                        <constraint firstAttribute="width" constant="300" id="x9o-2S-qaz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJW-JL-ODg">
+                                                    <rect key="frame" x="15" y="32" width="300" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="KZS-N6-JMW"/>
+                                                        <constraint firstAttribute="width" constant="300" id="glq-Im-Rsn"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit amet, mundi labores eos cu, inani nostrud ex usu, mel ad probo veniam. In qui ferri lorem expetendis. Nec cu stet placerat, choro officiis et nam. Erat probo pri ex, sit vide verear sanctus an, duo liber meliore cu.
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jvm-np-Bad">
+                                                    <rect key="frame" x="323" y="26.333333333333329" width="45" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29" id="6Dz-yR-By5"/>
+                                                        <constraint firstAttribute="width" constant="45" id="twf-eq-roK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Jvm-np-Bad" firstAttribute="centerY" secondItem="o1n-d8-FK2" secondAttribute="centerY" id="Rji-JM-24z"/>
+                                                <constraint firstItem="fik-UY-z9Z" firstAttribute="top" secondItem="o1n-d8-FK2" secondAttribute="top" constant="6" id="cat-Dh-FvF"/>
+                                                <constraint firstItem="cJW-JL-ODg" firstAttribute="leading" secondItem="o1n-d8-FK2" secondAttribute="leading" constant="15" id="icv-iI-X06"/>
+                                                <constraint firstAttribute="trailing" secondItem="Jvm-np-Bad" secondAttribute="trailing" constant="7" id="kXx-dt-MJw"/>
+                                                <constraint firstItem="cJW-JL-ODg" firstAttribute="top" secondItem="o1n-d8-FK2" secondAttribute="top" constant="32" id="kuY-mD-PwC"/>
+                                                <constraint firstItem="fik-UY-z9Z" firstAttribute="leading" secondItem="o1n-d8-FK2" secondAttribute="leading" constant="15" id="rhF-sY-Zcy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="questionDescription" destination="cJW-JL-ODg" id="czg-x9-baK"/>
+                                            <outlet property="questionTitle" destination="fik-UY-z9Z" id="z57-Z5-Kx2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JS1-LG-5pK" id="nSn-zw-2QF"/>
+                                    <outlet property="delegate" destination="JS1-LG-5pK" id="UE8-z9-w9R"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bc8-x6-9eo" firstAttribute="bottom" secondItem="Hn0-po-TG3" secondAttribute="bottom" id="R5O-KE-0Gs"/>
+                            <constraint firstItem="Hn0-po-TG3" firstAttribute="leading" secondItem="Bc8-x6-9eo" secondAttribute="leading" id="SlX-5X-VTw"/>
+                            <constraint firstItem="Bc8-x6-9eo" firstAttribute="trailing" secondItem="Hn0-po-TG3" secondAttribute="trailing" id="kdh-qo-zaA"/>
+                            <constraint firstItem="Hn0-po-TG3" firstAttribute="top" secondItem="Bc8-x6-9eo" secondAttribute="top" id="sAd-ZD-ubR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bc8-x6-9eo"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Hn0-po-TG3" id="xAN-K1-96v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gof-hC-FmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-727.20000000000005" y="1880.5418719211823"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7rI-hR-S4E">
@@ -179,7 +270,7 @@
                     <tabBarItem key="tabBarItem" title="My Profile" image="profile tab icon" id="Trf-kw-SEo"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o91-CK-hyZ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -198,7 +289,7 @@
                     <tabBarItem key="tabBarItem" title="Forum" image="forum tab icon" id="Vje-fx-ipd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WPB-0p-moX">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -217,7 +308,7 @@
                     <tabBarItem key="tabBarItem" title="Settings" image="settings tab icon" id="Nxd-eT-mp8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6JD-nE-CrJ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
