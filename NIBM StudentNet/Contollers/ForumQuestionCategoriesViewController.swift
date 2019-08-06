@@ -85,10 +85,6 @@ extension ForumQuestionCategoriesViewController {
             let destinationVC = segue.destination as! CategorySelectedViewController // INITIALIZING LANDING VIEW CONTROLLER
             destinationVC.selectedCategoryID = questionCategoryList[indexPassed].questionCategoryID
             destinationVC.selectedCategoryName = questionCategoryList[indexPassed].questionCategoryName
-
-            
         }
-        
     }
-    
 }

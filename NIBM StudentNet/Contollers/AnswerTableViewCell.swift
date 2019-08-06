@@ -1,20 +1,15 @@
 //
-//  QuestionTableViewCell.swift
+//  AnswerTableViewCell.swift
 //  NIBM StudentNet
 //
-//  Created by Tuhan Sapumanage on 8/5/19.
+//  Created by Tuhan Sapumanage on 8/6/19.
 //  Copyright © 2019 Tuhan Sapumanage. All rights reserved.
 //
 
 import UIKit
-import FirebaseAuth
-import Firebase
 
-class QuestionTableViewCell: UITableViewCell {
+class AnswerTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var questionTitle: UILabel!
-    @IBOutlet weak var questionDescription: UILabel!
-    @IBOutlet weak var questionAnswerCount: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
