@@ -28,6 +28,7 @@
 		E7B0261F22F953E5001C46A7 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0261E22F953E5001C46A7 /* Answer.swift */; };
 		E7B0262122F95D63001C46A7 /* QuestionSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0262022F95D63001C46A7 /* QuestionSelectedViewController.swift */; };
 		E7B0262322F960FD001C46A7 /* AnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0262222F960FD001C46A7 /* AnswerTableViewCell.swift */; };
+		E7B0262522FAF890001C46A7 /* ConfirmEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0262422FAF890001C46A7 /* ConfirmEmailViewController.swift */; };
 		E7C1E46122E0688500021A01 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C1E46022E0688500021A01 /* Authentication.storyboard */; };
 		E7C1E46422E068BC00021A01 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C1E46322E068BC00021A01 /* Home.storyboard */; };
 		E9944FA1EA08EBB804041736 /* Pods_NIBM_StudentNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5D7184E8198819CAFA9365 /* Pods_NIBM_StudentNet.framework */; };
@@ -60,6 +61,7 @@
 		E7B0261E22F953E5001C46A7 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		E7B0262022F95D63001C46A7 /* QuestionSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSelectedViewController.swift; sourceTree = "<group>"; };
 		E7B0262222F960FD001C46A7 /* AnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerTableViewCell.swift; sourceTree = "<group>"; };
+		E7B0262422FAF890001C46A7 /* ConfirmEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailViewController.swift; sourceTree = "<group>"; };
 		E7C1E46022E0688500021A01 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		E7C1E46322E068BC00021A01 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +101,7 @@
 				E754E41F22F8992E007445D4 /* QuestionTableViewCell.swift */,
 				E7B0262022F95D63001C46A7 /* QuestionSelectedViewController.swift */,
 				E7B0262222F960FD001C46A7 /* AnswerTableViewCell.swift */,
+				E7B0262422FAF890001C46A7 /* ConfirmEmailViewController.swift */,
 			);
 			path = Contollers;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B0262522FAF890001C46A7 /* ConfirmEmailViewController.swift in Sources */,
 				E754E41522F87760007445D4 /* ForumQuestionCategoriesViewController.swift in Sources */,
 				E754E42022F8992E007445D4 /* QuestionTableViewCell.swift in Sources */,
 				E754E41E22F894AB007445D4 /* CategorySelectedViewController.swift in Sources */,
