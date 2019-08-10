@@ -12,9 +12,13 @@ class ConfirmEmailViewController: UIViewController {
 
     @IBOutlet weak var confirmButton: UIView!
     @IBOutlet weak var otpCodeTxt: UITextField!
+    var studentInfo: Student!
+    var otp: String!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.confirmButton.layer.cornerRadius = 10
+        print(studentInfo.studentFirstName)
+        print(otp)
     }
     
     @IBAction func confirmBtnClicked(_ sender: Any) {

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mbj-H7-OMx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mbj-H7-OMx">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -586,7 +586,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K84-FV-5ys">
                                                         <rect key="frame" x="0.0" y="73.333333333333314" width="375" height="73.333333333333314"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NIBM Email Address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="u1p-F3-oDn">
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NIBM Email Address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="u1p-F3-oDn">
                                                                 <rect key="frame" x="19" y="12.333333333333314" width="337" height="49"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="337" id="JC9-CG-aRX"/>
@@ -595,6 +595,9 @@
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="didEditingChangedEmail:" destination="M82-Yu-zQb" eventType="editingChanged" id="YgV-TM-Lyu"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -711,6 +714,9 @@
                                                                 <state key="normal" title="Register NOW">
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="didClickRegisterNow:" destination="M82-Yu-zQb" eventType="touchUpInside" id="1aI-Io-ePc"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -732,16 +738,62 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6O-Wf-bs7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="afD-Cv-Df7">
+                                        <rect key="frame" x="169" y="387.66666666666669" width="37" height="37"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krw-qu-fZj">
+                                        <rect key="frame" x="0.0" y="432.66666666666669" width="375" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="AIZ-Lv-cDC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="afD-Cv-Df7" firstAttribute="centerX" secondItem="H6O-Wf-bs7" secondAttribute="centerX" id="0OB-9W-5NT"/>
+                                    <constraint firstItem="krw-qu-fZj" firstAttribute="leading" secondItem="H6O-Wf-bs7" secondAttribute="leading" id="Ng5-9D-5Y9"/>
+                                    <constraint firstAttribute="trailing" secondItem="krw-qu-fZj" secondAttribute="trailing" id="eoM-MU-83e"/>
+                                    <constraint firstItem="krw-qu-fZj" firstAttribute="centerX" secondItem="H6O-Wf-bs7" secondAttribute="centerX" id="fke-Jw-CM1"/>
+                                    <constraint firstItem="krw-qu-fZj" firstAttribute="top" secondItem="afD-Cv-Df7" secondAttribute="bottom" constant="8" id="hJR-1q-cjh"/>
+                                    <constraint firstItem="afD-Cv-Df7" firstAttribute="centerY" secondItem="H6O-Wf-bs7" secondAttribute="centerY" id="pkd-Kw-l4K"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8nz-lK-GfM" firstAttribute="leading" secondItem="iA7-ct-uKZ" secondAttribute="leading" id="4H6-mc-eMd"/>
                             <constraint firstItem="8nz-lK-GfM" firstAttribute="top" secondItem="iA7-ct-uKZ" secondAttribute="top" id="4fe-YP-y76"/>
+                            <constraint firstItem="H6O-Wf-bs7" firstAttribute="leading" secondItem="iA7-ct-uKZ" secondAttribute="leading" id="7MA-nf-Yxh"/>
                             <constraint firstItem="iA7-ct-uKZ" firstAttribute="trailing" secondItem="8nz-lK-GfM" secondAttribute="trailing" id="FOA-7Q-tof"/>
+                            <constraint firstItem="H6O-Wf-bs7" firstAttribute="trailing" secondItem="iA7-ct-uKZ" secondAttribute="trailing" id="H2B-v2-xSx"/>
+                            <constraint firstItem="H6O-Wf-bs7" firstAttribute="top" secondItem="Hua-LV-mO1" secondAttribute="top" id="dvj-nO-q9t"/>
+                            <constraint firstAttribute="bottom" secondItem="H6O-Wf-bs7" secondAttribute="bottom" id="elJ-mQ-FCj"/>
                             <constraint firstItem="iA7-ct-uKZ" firstAttribute="bottom" secondItem="8nz-lK-GfM" secondAttribute="bottom" id="fx9-eb-T7E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iA7-ct-uKZ"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="H6O-Wf-bs7"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="batchPicker" destination="8cd-TP-Dc2" id="XkZ-dg-Kem"/>
+                        <outlet property="dobPicker" destination="KWx-kH-rEm" id="hws-uk-Xdk"/>
+                        <outlet property="emailTxt" destination="u1p-F3-oDn" id="3wn-lm-Snb"/>
+                        <outlet property="fNameTxt" destination="ovP-c7-JEH" id="feG-N7-m5L"/>
+                        <outlet property="lNameTxt" destination="lQF-Ux-JHd" id="Fve-N1-eCg"/>
+                        <outlet property="loadingDataView" destination="H6O-Wf-bs7" id="6gS-g6-hhC"/>
+                        <segue destination="5Oa-gB-5KZ" kind="show" identifier="otp" id="XpN-Ir-gAC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKS-YU-y5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

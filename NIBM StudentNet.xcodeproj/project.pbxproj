@@ -23,7 +23,6 @@
 		E754E41C22F87BA4007445D4 /* QuestionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E41B22F87BA4007445D4 /* QuestionCategory.swift */; };
 		E754E41E22F894AB007445D4 /* CategorySelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E41D22F894AB007445D4 /* CategorySelectedViewController.swift */; };
 		E754E42022F8992E007445D4 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E41F22F8992E007445D4 /* QuestionTableViewCell.swift */; };
-		E7ADCB1322E388650002D270 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7ADCB1222E388650002D270 /* GoogleService-Info.plist */; };
 		E7B0261D22F9538E001C46A7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0261C22F9538E001C46A7 /* Question.swift */; };
 		E7B0261F22F953E5001C46A7 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0261E22F953E5001C46A7 /* Answer.swift */; };
 		E7B0262122F95D63001C46A7 /* QuestionSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0262022F95D63001C46A7 /* QuestionSelectedViewController.swift */; };
@@ -32,6 +31,8 @@
 		E7C1E46122E0688500021A01 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C1E46022E0688500021A01 /* Authentication.storyboard */; };
 		E7C1E46422E068BC00021A01 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C1E46322E068BC00021A01 /* Home.storyboard */; };
 		E9944FA1EA08EBB804041736 /* Pods_NIBM_StudentNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5D7184E8198819CAFA9365 /* Pods_NIBM_StudentNet.framework */; };
+		FBF1B7E222FEBF9B0091C479 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBF1B7E122FEBF9B0091C479 /* GoogleService-Info.plist */; };
+		FBF1B7E422FECB660091C479 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1B7E322FECB660091C479 /* Courses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +57,6 @@
 		E754E41B22F87BA4007445D4 /* QuestionCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCategory.swift; sourceTree = "<group>"; };
 		E754E41D22F894AB007445D4 /* CategorySelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectedViewController.swift; sourceTree = "<group>"; };
 		E754E41F22F8992E007445D4 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
-		E7ADCB1222E388650002D270 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Documents/Acadamic/Coventry University/Y4S2/Agile Development/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7B0261C22F9538E001C46A7 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		E7B0261E22F953E5001C46A7 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		E7B0262022F95D63001C46A7 /* QuestionSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionSelectedViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +64,8 @@
 		E7B0262422FAF890001C46A7 /* ConfirmEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailViewController.swift; sourceTree = "<group>"; };
 		E7C1E46022E0688500021A01 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		E7C1E46322E068BC00021A01 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FBF1B7E122FEBF9B0091C479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FBF1B7E322FECB660091C479 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +146,7 @@
 		E71B523322DF20FE00E68130 /* NIBM StudentNet */ = {
 			isa = PBXGroup;
 			children = (
-				E7ADCB1222E388650002D270 /* GoogleService-Info.plist */,
+				FBF1B7E122FEBF9B0091C479 /* GoogleService-Info.plist */,
 				E71B523422DF20FE00E68130 /* AppDelegate.swift */,
 				E7C1E46222E068A200021A01 /* Storyboards */,
 				38B3EC9822E17F7D00C0D6B7 /* App Support */,
@@ -162,6 +164,7 @@
 				E754E41B22F87BA4007445D4 /* QuestionCategory.swift */,
 				E7B0261C22F9538E001C46A7 /* Question.swift */,
 				E7B0261E22F953E5001C46A7 /* Answer.swift */,
+				FBF1B7E322FECB660091C479 /* Courses.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,7 +245,7 @@
 				E71B523F22DF210000E68130 /* LaunchScreen.storyboard in Resources */,
 				E71B523C22DF210000E68130 /* Assets.xcassets in Resources */,
 				E71B523A22DF20FE00E68130 /* Main.storyboard in Resources */,
-				E7ADCB1322E388650002D270 /* GoogleService-Info.plist in Resources */,
+				FBF1B7E222FEBF9B0091C479 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +315,7 @@
 				E7B0261F22F953E5001C46A7 /* Answer.swift in Sources */,
 				E754E40F22F86EBA007445D4 /* Student.swift in Sources */,
 				E71B523522DF20FE00E68130 /* AppDelegate.swift in Sources */,
+				FBF1B7E422FECB660091C479 /* Courses.swift in Sources */,
 				E7B0262122F95D63001C46A7 /* QuestionSelectedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
