@@ -30,8 +30,8 @@
 		E7B0262522FAF890001C46A7 /* ConfirmEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B0262422FAF890001C46A7 /* ConfirmEmailViewController.swift */; };
 		E7C1E46122E0688500021A01 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C1E46022E0688500021A01 /* Authentication.storyboard */; };
 		E7C1E46422E068BC00021A01 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7C1E46322E068BC00021A01 /* Home.storyboard */; };
+		E7D6A268234B2D3800A0080F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7D6A267234B2D3800A0080F /* GoogleService-Info.plist */; };
 		E9944FA1EA08EBB804041736 /* Pods_NIBM_StudentNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5D7184E8198819CAFA9365 /* Pods_NIBM_StudentNet.framework */; };
-		FBF1B7E222FEBF9B0091C479 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBF1B7E122FEBF9B0091C479 /* GoogleService-Info.plist */; };
 		FBF1B7E422FECB660091C479 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1B7E322FECB660091C479 /* Courses.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 		E7B0262422FAF890001C46A7 /* ConfirmEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmEmailViewController.swift; sourceTree = "<group>"; };
 		E7C1E46022E0688500021A01 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		E7C1E46322E068BC00021A01 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		FBF1B7E122FEBF9B0091C479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7D6A267234B2D3800A0080F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FBF1B7E322FECB660091C479 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +146,7 @@
 		E71B523322DF20FE00E68130 /* NIBM StudentNet */ = {
 			isa = PBXGroup;
 			children = (
-				FBF1B7E122FEBF9B0091C479 /* GoogleService-Info.plist */,
+				E7D6A267234B2D3800A0080F /* GoogleService-Info.plist */,
 				E71B523422DF20FE00E68130 /* AppDelegate.swift */,
 				E7C1E46222E068A200021A01 /* Storyboards */,
 				38B3EC9822E17F7D00C0D6B7 /* App Support */,
@@ -245,7 +245,7 @@
 				E71B523F22DF210000E68130 /* LaunchScreen.storyboard in Resources */,
 				E71B523C22DF210000E68130 /* Assets.xcassets in Resources */,
 				E71B523A22DF20FE00E68130 /* Main.storyboard in Resources */,
-				FBF1B7E222FEBF9B0091C479 /* GoogleService-Info.plist in Resources */,
+				E7D6A268234B2D3800A0080F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
